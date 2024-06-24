@@ -13,5 +13,13 @@ The most appropriate model was chosen for each stage of our approach, after conf
 
 4) code smell detection and severity classification.ipynb
 Python script for the code smell detector and classifier used in Section 5.2, with the results of the studies experiments. Our approach for detecting and classifying code smell severity included two steps. The first step aims to detect code smells from instances with severity, using the Standardization data preprocessing technique, Chi-Square for feature selection, and the CatBoost ensemble method to binary identify the presence or absence of code smell. The following step removes the negative instances and classifies the code smell severity of the positive instances, using the standardization, chi-square, and XGBoost. This approach obtained 85% accuracy, as described in Table 5 of the article.
+
+5) Analysis for imputation of missing values.ipynb. Python script to analyze attributes with missing values ​​to determine the best strategy for filling in their values.
+
+6) Outliers Analysis.ipynb. Python script to analyze outliers of attributes.
+
+7) merged dataset_FE_LM_GC_DC missing values.csv. Combined dataset with missing values, i.e., method metrics (NOP, CC, ATFD, FDP, CM, MAXNESTING, LOC, CYCLO, NMCS, NOLV, MaMCL, NOAV, LAA, FANOUT, CFNAMM, ATLD, CLNAMM, CINT, MeMCL, CDISP) in the GC and DC instances.
+
+8) merged dataset_FE_LM_GC_DC.csv. Combined dataset with missing values ​​filled in by using the mode value because the sample values for each attribute do not follow a normal distribution, according to histograms generated in the Analysis for imputation of missing values.ipynb.
    
 
